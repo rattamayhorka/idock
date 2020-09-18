@@ -1,6 +1,7 @@
 /****************************
-idock v1.8.0
-17-09-20
+idock v1.9.0
+18-09-20
+actualizado con git
 ****************************/
 
 #include <avr/io.h>
@@ -97,12 +98,10 @@ while(1){
       USART_SendByte(0xFA);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("PLAY\n");
     }
     else if(strcmp(command,":r")==0){
       PORTD &= ~((1 << PD6)|(1 << PD5));
-      //PORTD &= ~(1 << PD6);
       HEADER
       USART_SendByte(0x03);
       USART_SendByte(0x02);
@@ -111,12 +110,10 @@ while(1){
       USART_SendByte(0xeb);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("RESTART\n");
     }
     else if(strcmp(command,":rr")==0){
-            PORTD &= ~((1 << PD6)|(1 << PD5));
-//PORTD &= ~(1 << PD6);
+      PORTD &= ~((1 << PD6)|(1 << PD5));
       HEADER
       USART_SendByte(0x03);
       USART_SendByte(0x02);
@@ -133,12 +130,10 @@ while(1){
       USART_SendByte(0xeb);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("PREV TRACK\n");
     }
     else if(strcmp(command,":f")==0){
       PORTD &= ~((1 << PD6)|(1 << PD5));
-//      PORTD &= ~(1 << PD6);
       HEADER
       USART_SendByte(0x03);
       USART_SendByte(0x02);
@@ -147,12 +142,10 @@ while(1){
       USART_SendByte(0xf3);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("FORWARD\n");
     }
     else if(strcmp(command,":vm")==0){
-        PORTD &= ~((1 << PD6)|(1 << PD5));
-//    PORTD &= ~(1 << PD6);
+      PORTD &= ~((1 << PD6)|(1 << PD5));
       HEADER
       USART_SendByte(0x03);
       USART_SendByte(0x02);
@@ -161,12 +154,10 @@ while(1){
       USART_SendByte(0xf9);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("VOLUME UP\n");
     }
     else if(strcmp(command,":mv")==0){
       PORTD &= ~((1 << PD6)|(1 << PD5));
-//      PORTD &= ~(1 << PD6);
       HEADER
       USART_SendByte(0x03);
       USART_SendByte(0x02);
@@ -175,25 +166,19 @@ while(1){
       USART_SendByte(0xf7);
       sin_boton();
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("VOLUME DOWN\n");
     }
     else if(strcmp(command,":c")==0){
-      //esc sequence to clear screen
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
-      USART_SendString("\e[2J");
+      USART_SendString("\e[2J");//esc sequence to clear screen
     }
     else if(strcmp(command,":h")==0){
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       Terminal_Init();
     }
     else{
       PORTD |= (1 << PD6)|(1 << PD5);
-//      PORTD |= (1 << PD6);
       USART_SendString("COMMAND NOT FOUND\n");
-      //sin_boton();
     }
     for(i=0;i<=9;i++){
       command[i] = 0;

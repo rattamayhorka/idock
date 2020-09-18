@@ -23,3 +23,6 @@ line delay: 0 ms
 Character delay 0m s
 Local echo: ON
 Clear input on send: ON
+
+*********************
+
