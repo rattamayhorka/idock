@@ -1,4 +1,5 @@
 # idock
+manualito de como configurar git
 
 COMMAND ESCAPE SEQUENCES: https://shiroyasha.svbtle.com/escape-sequences-a-quick-guide-1
 
