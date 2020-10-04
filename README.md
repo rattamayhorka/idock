@@ -5,7 +5,7 @@ COMMAND ESCAPE SEQUENCES: https://shiroyasha.svbtle.com/escape-sequences-a-quick
 
 configuracion de la terminal bluetooth "Serial Bluetooth"
 
-##TERMINAL
+## TERMINAL
 
 Font size: la que te guste
 Font style: Normal
@@ -15,10 +15,10 @@ Auto scroll to end of buffer: ON
 Show connection messages: ON
 Show timestamps: OFF
 
-##RECEIVE
+## RECEIVE
 Newline: LF
 
-##SEND*
+## SEND*
 Newline: CR
 Edit mode: text
 line delay: 0 ms
