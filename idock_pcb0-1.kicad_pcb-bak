@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 63)
     (zones 0)
     (modules 17)
@@ -896,6 +896,9 @@
     )
   )
 
+  (gr_text audio-out (at 174 76 90) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (gr_line (start 197.5 62.5) (end 197.5 120) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 105 62.5) (end 197.5 62.5) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 105 120) (end 105 62.5) (layer Edge.Cuts) (width 0.1))
