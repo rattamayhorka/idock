@@ -1,11 +1,13 @@
 # IDOCK
 manualito de como configurar git
 
-COMMAND ESCAPE SEQUENCES: https://shiroyasha.svbtle.com/escape-sequences-a-quick-guide-1
+[COMMAND ESCAPE SEQUENCES] (https://shiroyasha.svbtle.com/escape-sequences-a-quick-guide-1)
+[ATMEGA32 pinout] (https://atmega32-avr.com/wp-content/uploads/2012/04/atmega-pinout.jpg)
 
-configuracion de la terminal bluetooth "Serial Bluetooth"
 
-## TERMINAL
+## configuracion de la terminal bluetooth "Serial Bluetooth"
+
+# TERMINAL
 
 ```bash
 Font size: la que te guste
@@ -17,11 +19,11 @@ Show connection messages: ON
 Show timestamps: OFF
 ```
 
-## RECEIVE
+# RECEIVE
 ```bash
 Newline: LF
 ```
-## SEND*
+# SEND
 ```bash
 Newline: CR
 Edit mode: text
