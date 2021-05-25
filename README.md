@@ -1,3 +1,13 @@
+
+
+
+#HOWTO
+- Activa el Bluetooth
+- password 1234
+- configura la aplicación con todos los datos de entrada y salida
+- configura la aplicación como terminal
+- ingresa :h para ayuda
+
 # IDOCK
 manualito de como configurar git
 
