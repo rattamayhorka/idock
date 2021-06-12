@@ -1,5 +1,5 @@
 
-#verificar conexion con stk500
+# verificar conexion con stk500
 avrdude -c stk500 -p m32 -P /dev/ttyUSB0 -v -U lfuse:r:-:i -v
 #si sale error de escritura
 Es por los permisos, correr:
