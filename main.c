@@ -1,6 +1,6 @@
 /****************************
 idock v1.9.1
-12-10-20
+12-10-2020 -> 17-06-2021
 actualizado con git
 ****************************/
 
@@ -41,9 +41,9 @@ void USART_SendString (volatile char *send){
 
 void Terminal_Init(void){
       USART_SendString("\e[2J");
-      USART_SendString("-------------------------------------------\n");
+      USART_SendString("-----------------------------------------\n");
       USART_SendString("Welcome to iPod's UART\n");
-      USART_SendString("-------------------------------------------\n\n");
+      USART_SendString("-----------------------------------------\n\n");
       USART_SendString("Commands:\n");
       USART_SendString(":p - Play/Pause\n");
       USART_SendString(":r - Replay\n");
