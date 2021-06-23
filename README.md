@@ -1,6 +1,10 @@
 
-# Verificar conexion con stk500
+# Verificar conexion con stk500 (leer los fuses del uCONTROLADOR)
 avrdude -c stk500 -p m32 -P /dev/ttyUSB0 -v -U lfuse:r:-:i -v
+
+avrdude -c stk500 -p m32 -P /dev/ttyUSB0 -v -U lfuse:r:-:i -v
+
+
 #si sale error de escritura
 Es por los permisos, correr:
 sudo chmod 666 /dev/ttyUSB0
