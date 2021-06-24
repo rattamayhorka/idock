@@ -63,6 +63,7 @@ void IPOD_Init(void){
   USART_SendByte(0x01);
   USART_SendByte(0x02);
   USART_SendByte(0xFA);
+//  _delay_ms(WAIT);
 }
 void sin_boton(void){
   HEADER
@@ -97,6 +98,7 @@ while(1){
       USART_SendByte(0x01);
       USART_SendByte(0xFA);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("PLAY\n");
     }
@@ -109,6 +111,7 @@ while(1){
       USART_SendByte(0x10);
       USART_SendByte(0xeb);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("RESTART\n");
     }
@@ -121,6 +124,7 @@ while(1){
       USART_SendByte(0x10);
       USART_SendByte(0xeb);
       sin_boton();
+      IPOD_Init();
       _delay_ms(WAIT);
       HEADER
       USART_SendByte(0x03);
@@ -129,6 +133,7 @@ while(1){
       USART_SendByte(0x10);
       USART_SendByte(0xeb);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("PREV TRACK\n");
     }
@@ -141,6 +146,7 @@ while(1){
       USART_SendByte(0x08);
       USART_SendByte(0xf3);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("FORWARD\n");
     }
@@ -153,6 +159,7 @@ while(1){
       USART_SendByte(0x02);
       USART_SendByte(0xf9);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("VOLUME UP\n");
     }
@@ -165,6 +172,7 @@ while(1){
       USART_SendByte(0x04);
       USART_SendByte(0xf7);
       sin_boton();
+      IPOD_Init();
       PORTD |= (1 << PD6)|(1 << PD5);
       USART_SendString("VOLUME DOWN\n");
     }
@@ -175,6 +183,8 @@ while(1){
     else if(strcmp(command,":h")==0){
       PORTD |= (1 << PD6)|(1 << PD5);
       Terminal_Init();
+      sin_boton();
+      IPOD_Init();
     }
     else{
       PORTD |= (1 << PD6)|(1 << PD5);
