@@ -1,18 +1,20 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
-    <h1>/home/acatl/Projects/ipod/idock/idock_pcb0-1.sch</h1>
-    <p>sáb 03 oct 2020 22:43:34</p>
-    <p>Eeschema 5.1.6</p>
-    <p><b>Component Count:</b>13</p>
-    <table>
-    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1, C2</td><td>2</td><td>22pf</td><td>Device:C</td><td>~</td><td>Unpolarized capacitor</td><td></td></tr><tr><td>D1</td><td>1</td><td>LED BLUE</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>J1</td><td>1</td><td>Barrel_Jack_Switch</td><td>Connector:Barrel_Jack_Switch</td><td>~</td><td>DC Barrel Jack with an internal switch</td><td></td></tr><tr><td>J2</td><td>1</td><td>bluetooth-dock</td><td>Connector:Screw_Terminal_01x11</td><td>~</td><td>Generic screw terminal, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>Q1</td><td>1</td><td>BC548</td><td>Transistor_BJT:BC548</td><td>http://www.fairchildsemi.com/ds/BC/BC547.pdf</td><td>0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92</td><td></td></tr><tr><td>R1, R3</td><td>2</td><td>10k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R2</td><td>1</td><td>330</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R4</td><td>1</td><td>47k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>SW1</td><td>1</td><td>Reset</td><td>Switch:SW_Push</td><td>~</td><td>Push button switch, generic, two pins</td><td></td></tr><tr><td>U1</td><td>1</td><td>ATmega32A-PU</td><td>MCU_Microchip_ATmega:ATmega32A-PU</td><td>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf</td><td>16MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, JTAG, DIP-40</td><td></td></tr><tr><td>Y1</td><td>1</td><td>8mhz</td><td>Device:Crystal</td><td>~</td><td>Two pin crystal</td><td></td></tr><!--TABLEROW-->
-    </table>
-    </body>
-</html>
-    
+"Source:"	"/home/acatl/Projects/ipod/idock/idock_pcb0-1.sch"
+"Date:"	"vie 25 jun 2021 00:30:05"
+"Tool:"	"Eeschema 5.1.10"
+"Component Count:"	"15"
+"Ref"	"Value"	"Part"	"Footprint"	"Description"	"Vendor"
+"C1"	"22pf"	"Device:C"	"Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"	"Unpolarized capacitor"	""
+"C2"	"22pf"	"Device:C"	"Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"	"Unpolarized capacitor"	""
+"D1"	"LED BLUE DATA RX"	"Device:LED"	"LED_THT:LED_D5.0mm_Clear"	"Light emitting diode"	""
+"J1"	"Barrel_Jack_Switch"	"Connector:Barrel_Jack_Switch"	"Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002"	"DC Barrel Jack with an internal switch"	""
+"J2"	"bluetooth-dock"	"Connector:Screw_Terminal_01x11"	"Connector_PinSocket_2.54mm:PinSocket_1x11_P2.54mm_Vertical"	"Generic screw terminal, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
+"J3"	"POWERLED"	"Connector:Screw_Terminal_01x04"	"Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"	"Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"	""
+"Q1"	"BC548"	"Transistor_BJT:BC548"	"Package_TO_SOT_THT:TO-92_Inline_Wide"	"0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"	""
+"R1"	"10k"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
+"R2"	"330"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
+"R3"	"10k"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
+"R4"	"47k"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
+"R5"	"47k"	"Device:R"	"Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"	"Resistor"	""
+"SW1"	"Reset"	"Switch:SW_Push"	"Button_Switch_THT:SW_PUSH_6mm"	"Push button switch, generic, two pins"	""
+"U1"	"ATmega32A-PU"	"MCU_Microchip_ATmega:ATmega32A-PU"	"Package_DIP:DIP-40_W15.24mm"	"16MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, JTAG, DIP-40"	""
+"Y1"	"8mhz"	"Device:Crystal"	"Crystal:Crystal_HC49-4H_Vertical"	"Two pin crystal"	""
