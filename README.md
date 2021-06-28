@@ -1,4 +1,3 @@
-
 # Verificar conexion con stk500 (leer los fuses del uCONTROLADOR)
 avrdude -c stk500 -p m32 -P /dev/ttyUSB0 -v -U lfuse:r:-:i -v
 
