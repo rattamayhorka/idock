@@ -382,9 +382,6 @@ Wire Wire Line
 Connection ~ 8300 5300
 Wire Wire Line
 	8300 5300 8400 5300
-NoConn ~ 8400 4700
-NoConn ~ 8400 4600
-NoConn ~ 8400 4500
 Wire Wire Line
 	5300 4750 8000 4750
 $Comp
@@ -504,4 +501,31 @@ Wire Wire Line
 	2500 850  2500 1350
 Wire Wire Line
 	2600 850  2600 1350
+Wire Wire Line
+	8350 4700 8400 4700
+Wire Wire Line
+	8350 4650 8350 4700
+Wire Wire Line
+	7900 4650 8350 4650
+Wire Wire Line
+	7900 4250 7900 4650
+Wire Wire Line
+	8300 4050 8400 4050
+Wire Wire Line
+	8400 4050 8400 4500
+Wire Wire Line
+	8100 4600 8400 4600
+Wire Wire Line
+	8100 4250 8100 4600
+$Comp
+L Connector:Conn_Coaxial_x2 J4
+U 1 1 60D9751E
+P 8000 4050
+F 0 "J4" V 8237 3979 50  0000 C CNN
+F 1 "Conn_Coaxial_x2" V 8146 3979 50  0000 C CNN
+F 2 "" H 8000 3950 50  0001 C CNN
+F 3 " ~" H 8000 3950 50  0001 C CNN
+	1    8000 4050
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
