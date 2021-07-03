@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Importar footprints desde snapEDA
 - bajar el footprint
 - In KiCad, go to Tools > Edit Schematic Symbols.
@@ -8,7 +6,6 @@
 .lib file. Then click Open.
  -- Use the search bar on the left pane of the window to search for the imported symbol and double-click it to open.
 
->>>>>>> footprints
 # Verificar conexion con stk500 (leer los fuses del uCONTROLADOR)
 avrdude -c stk500 -p m32 -P /dev/ttyUSB0 -v -U lfuse:r:-:i -v
 
