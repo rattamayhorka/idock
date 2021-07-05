@@ -1,3 +1,20 @@
+## Generar archivos para jlcpcb
+
+#Generar gerber para jlcpcb
+ https://support.jlcpcb.com/article/22-how-to-generate-the-gerber-files
+- Select File -> Plot from the menu to open the gerber generation tool.
+  Select:
+   F.Cu
+   B.Cu
+   B.SilkS
+   F.Silks
+   B.Mask
+   F.Mask
+   Edge.Cuts
+- 
+
+
+
 # Importar footprints desde snapEDA
 - bajar el footprint
 - In KiCad, go to Tools > Edit Schematic Symbols.
